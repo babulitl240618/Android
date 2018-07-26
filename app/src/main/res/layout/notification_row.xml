@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFE6E6E6"
+    android:padding="10dip" >
+
+    <com.chrishoekstra.trello.gravatar.GravatarView
+        xmlns:gravatar="https://github.com/phbernard/android-gravatar-view/schemas"
+        android:id="@+id/gravatar"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="1dip"
+        android:background="#FFB9B9B9"
+        android:padding="1dip" />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gravatar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/gravatar"
+        android:text="changed the card &apos;New feature request that does X&apos; on &apos;Test Board&apos;"
+        android:textColor="#FF434343"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notification_text"
+        android:layout_below="@+id/notification_text"
+        android:text="12 hours ago"
+        android:textColor="#FFA0A0A0"
+        android:textSize="14sp" />
+
+</RelativeLayout>
